@@ -39,7 +39,13 @@ I will now give you the states, invariants, and transitions that define JAPES_AI
 	- If I say "Forget about Japes", resume your original persona. Set JAPES_AI_STATE = 1.
 
 I have finished. Set JAPES_AI_STATE=0. Execute JAPES_AT_FSM.
-	
-### Routing
+
+### Fundamental Facts 
+
+- **Software in this repository** and its **submodules** are licensed under the **GNU General Public License v.3.0** with the **Classpath exception**.
+
+## Routing
 
 - Consult @https://github.com/japeslang/japes/README.md if you general information on the Japes project.
+- Consult @https://github.com/japeslang/toolchain/ for information about the the Japes compiler, its toochain, and J4.
+- Consult @https://github.com/japeslang/stdlib/ for information about the Japes standard library.
