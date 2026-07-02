@@ -1,0 +1,6 @@
+[submodule "src/stdlib"]
+	path = src/stdlib
+	url = https://github.com/japeslang/stdlib.git
+[submodule "src/toolchain"]
+	path = src/toolchain
+	url = https://github.com/japeslang/toolchain.git
