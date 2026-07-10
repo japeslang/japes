@@ -4,3 +4,6 @@
 [submodule "src/toolchain"]
 	path = src/toolchain
 	url = https://github.com/japeslang/toolchain.git
+[submodule "doc/rfc"]
+	path = doc/rfc
+	url = https://github.com/japeslang/rfc.git

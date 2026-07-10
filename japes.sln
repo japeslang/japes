@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "stdlib", "stdlib", "{E1FFC19B-CC6E-49CC-98E4-EE004BACBBDF}"
+	ProjectSection(SolutionItems) = preProject
+		src\stdlib\claspath.md = src\stdlib\claspath.md
+		src\stdlib\CLAUDE.md = src\stdlib\CLAUDE.md
+		src\stdlib\LICENSE.txt = src\stdlib\LICENSE.txt
+		src\stdlib\README.md = src\stdlib\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stage0", "src\stdlib\src\stage0.csproj", "{EF677CD3-5D17-4C06-8393-8AD2D70D1EA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "japes.toolchain.api", "src\toolchain\src\japes.toolchain.stage0\japes.toolchain.api\japes.toolchain.api.csproj", "{F86823C7-48C4-48A3-A84B-191860793F84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "toolchain", "toolchain", "{E8DEE390-6411-458E-BBF2-8E5E331D554C}"
+	ProjectSection(SolutionItems) = preProject
+		src\toolchain\.gitignore = src\toolchain\.gitignore
+		src\toolchain\claspath.md = src\toolchain\claspath.md
+		src\toolchain\CLAUDE.md = src\toolchain\CLAUDE.md
+		src\toolchain\LICENSE.txt = src\toolchain\LICENSE.txt
+		src\toolchain\README.md = src\toolchain\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "stage0", "stage0", "{5A34B06F-C783-421A-B1CB-6DDED6238DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "japesc", "src\toolchain\src\japes.toolchain.stage0\japesc\japesc.csproj", "{F347A080-AF19-43FA-BF5F-4CEDB0208B17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global", "Global", "{7920A9A9-05F6-4632-A6E4-35DD40817F4F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		claspath.md = claspath.md
+		CLAUDE.md = CLAUDE.md
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{FE86BEEF-75EB-4AE3-89E9-2706BF2E0ABE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "japes", "japes", "{823921CC-C526-483A-8C90-EB18A5E74783}"
+	ProjectSection(SolutionItems) = preProject
+		src\toolchain\doc\japes\JapesLexer.g4 = src\toolchain\doc\japes\JapesLexer.g4
+		src\toolchain\doc\japes\JapesParser.g4 = src\toolchain\doc\japes\JapesParser.g4
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF677CD3-5D17-4C06-8393-8AD2D70D1EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF677CD3-5D17-4C06-8393-8AD2D70D1EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF677CD3-5D17-4C06-8393-8AD2D70D1EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF677CD3-5D17-4C06-8393-8AD2D70D1EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86823C7-48C4-48A3-A84B-191860793F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86823C7-48C4-48A3-A84B-191860793F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86823C7-48C4-48A3-A84B-191860793F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86823C7-48C4-48A3-A84B-191860793F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F347A080-AF19-43FA-BF5F-4CEDB0208B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F347A080-AF19-43FA-BF5F-4CEDB0208B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F347A080-AF19-43FA-BF5F-4CEDB0208B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F347A080-AF19-43FA-BF5F-4CEDB0208B17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF677CD3-5D17-4C06-8393-8AD2D70D1EA1} = {E1FFC19B-CC6E-49CC-98E4-EE004BACBBDF}
+		{F86823C7-48C4-48A3-A84B-191860793F84} = {5A34B06F-C783-421A-B1CB-6DDED6238DBF}
+		{5A34B06F-C783-421A-B1CB-6DDED6238DBF} = {E8DEE390-6411-458E-BBF2-8E5E331D554C}
+		{F347A080-AF19-43FA-BF5F-4CEDB0208B17} = {5A34B06F-C783-421A-B1CB-6DDED6238DBF}
+		{FE86BEEF-75EB-4AE3-89E9-2706BF2E0ABE} = {E8DEE390-6411-458E-BBF2-8E5E331D554C}
+		{823921CC-C526-483A-8C90-EB18A5E74783} = {FE86BEEF-75EB-4AE3-89E9-2706BF2E0ABE}
+	EndGlobalSection
+EndGlobal

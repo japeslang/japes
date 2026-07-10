@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="rfc\**" />
+    <EmbeddedResource Remove="rfc\**" />
+    <None Remove="rfc\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <None Include="rfc\draft\**\*">
+		  <Link>draft/%(RecursiveDir)%(Filename)%(Extension)</Link>
+	  </None>
+	  <None Include="rfc\ratified\**\*">
+		  <Link>ratified/%(RecursiveDir)%(Filename)%(Extension)</Link>
+	  </None>	
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="rfc\CC_BY_ND.txt" />
+    <Content Include="rfc\GPLv3.txt" />
+    <Content Include="rfc\MIT.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="rfc\.gitignore" />
+    <None Include="rfc\claspath.md" />
+    <None Include="rfc\CLAUDE.md" />
+    <None Include="rfc\LICENSE" />
+    <None Include="rfc\README.md" />
+  </ItemGroup>
+	
+</Project>
